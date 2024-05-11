@@ -8,10 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Unit Deployment Checker</h1>
+        <h1>NSRP Deployment Checker</h1>
+        <p>In your MDT go to the supervisors section and copy all content there and input it to the form below. If the ratios are correct you can <b>request</b> to deploy as that unit.</p>
         <textarea id="unitInfo" placeholder="Paste unit info here..." rows="10"></textarea>
         <button onclick="checkDeployment()">Check Deployment</button>
-        <div id="deploymentResult"></div>
+        <center>
+        <div id="deploymentResult">
+            <h2>Deployment Result:</h2>
+            <!-- <p style="font-size: larger;">Highway: 2 Units Online | Deployable: <code style="color: #00ff26;">TRUE</code></p>
+            <p style="font-size: larger;">Public Order Response Team: 0 Units Online | Deployable: <code style="color: #00ff26;">TRUE</code></p>
+            <p style="font-size: larger;">Critical Incident Response Team: 0 Units Online | Deployable: <code style="color: #ff3232;" >FALSE</code></p> -->
+        </div>
+        </center>
+        <p>Please note this tool <b>DOES NOT</b> give you permission to deploy as that unit, it simply tells you what you can deploy as with the current online units. <br /> <b style="color: #f04747;">ALWAYS CONSULT A SUPERVISOR BEFORE DEPLOYING</b></p>
+        <br />
+        <!-- Add a disclamer saying that Luca is in no way affiliated with Newspark Roleplay -->
+        <p style="color: #838383; font-style: italic;">Disclaimer: This tool is not affiliated with Newspark Roleplay in any way. It is a tool created by Luca to help the community.</p>
+        <p>©️2024 | Designed by <a id="footerLink" href="https://pribilovic.net" target="_blank">Luca</a></p>
+
     </div>
     <script src="script.js"></script>
 </body>

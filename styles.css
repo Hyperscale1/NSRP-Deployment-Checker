@@ -1,19 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: "Space Mono", monospace;
+    font-family: "Roboto", sans-serif;
     background-color: #222;
     color: #fff;
 }
 
 .container {
-    max-width: 600px;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #555;
     border-radius: 5px;
     background-color: #333;
-    text-align: center; /* Center-align content */
+    text-align: center;
+}
+
+code {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #5866ff;
+    background-color: #212020;
+    padding: 5px;
+    border-radius: 3px;
+
 }
 
 textarea {
@@ -24,7 +34,9 @@ textarea {
     border-radius: 3px;
     background-color: #444;
     color: #fff;
-    text-align: left; /* Align text inside textarea to left */
+    text-align: left;
+    height: 30rem;
+    resize: none;
 }
 
 button {
@@ -47,5 +59,53 @@ button:hover {
     border: 1px solid #555;
     border-radius: 3px;
     color: #fff;
-    text-align: left; /* Align text inside deploymentResult to left */
+    text-align: left;
+    width: 95%;
+}
+
+#footerLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#footerLink:hover {
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+}
+
+/* Basic table styling for dark mode */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #ccc; /* Lighter text color for dark mode */
+}
+
+th, td {
+    border: 1px solid #444; /* Darker border color */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Header styling for dark mode */
+th {
+    background-color: #333; /* Dark background for headers */
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+}
+
+/* Row hover effect for dark mode */
+tr:hover {
+    background-color: #555; /* Slightly lighter shade for hover */
+}
+
+/* Deployable indicator styling for dark mode */
+td:nth-child(3):contains('Yes') {
+    background-color: #4CAF50; /* Green for deployable, still visible in dark mode */
+    color: white;
+}
+
+td:nth-child(3):contains('No') {
+    background-color: #f44336; /* Red for not deployable, still visible in dark mode */
+    color: white;
 }
